@@ -1,5 +1,5 @@
-﻿namespace API_CaseV1.Models
-{
+﻿namespace API_CaseV1
+{ 
     public class Adressen
     {
         public long Id { get; set; }
