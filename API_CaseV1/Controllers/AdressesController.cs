@@ -18,10 +18,10 @@ namespace API_CaseV1.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Adressen>>> GetAdressen()
         {
-          if (_context.Adressen == null)
-          {
-              return NotFound();
-          }
+            if (_context.Adressen == null)
+            {
+                return NotFound();
+            }
             return await _context.Adressen.ToListAsync();
         }
 
@@ -29,10 +29,10 @@ namespace API_CaseV1.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Adressen>> GetAdressen(long id)
         {
-          if (_context.Adressen == null)
-          {
-              return NotFound();
-          }
+            if (_context.Adressen == null)
+            {
+                return NotFound();
+            }
             var adressen = await _context.Adressen.FindAsync(id);
 
             if (adressen == null)
@@ -77,10 +77,10 @@ namespace API_CaseV1.Controllers
         [HttpPost]
         public async Task<ActionResult<Adressen>> PostAdressen(Adressen adressen)
         {
-          if (_context.Adressen == null)
-          {
-              return Problem("Entity set 'DBInteractor.Adressen'  is null.");
-          }
+            if (_context.Adressen == null)
+            {
+                return Problem("Entity set 'DBInteractor.Adressen'  is null.");
+            }
             _context.Adressen.Add(adressen);
             await _context.SaveChangesAsync();
 

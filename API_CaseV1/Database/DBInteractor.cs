@@ -16,8 +16,8 @@ namespace API_CaseV1
         {
             modelBuilder.Entity<Adressen>().HasData(
 
-            new Adressen() { Id = 1, Straat = "binnendijk", Huisnummer = 20, Postcode = "1446BE", Plaats = "Purmerend", Land = "Nederland" },
-            new Adressen() { Id = 2, Straat = "kalverstraat", Huisnummer = 31, Postcode = "1012PC", Plaats = "Amsterdam", Land = "Nederland" }
+            new Adressen() { Id = 1, Straat = "Gildeplein", Huisnummer = 20, Postcode = "1446BE", Plaats = "Purmerend", Land = "Nederland" },
+            new Adressen() { Id = 2, Straat = "Kalverstraat", Huisnummer = 31, Postcode = "1012PC", Plaats = "Amsterdam", Land = "Nederland" }
             );
         }
     }
