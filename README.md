@@ -3,10 +3,10 @@ API_CaseV1
 
 Gebruik gemaakt van:
 
-Web API .net 6 versie
-Sqlite DB browser (https://sqlitebrowser.org/)
-Github
-Visual studio 2022
+Web API .net 6 versie,
+Sqlite DB browser (https://sqlitebrowser.org/),
+Github,
+Visual studio 2022,
 Packages:
 - microsoft.entityframeworkcore 6.0.5
 - microsoft.entityframeworkcore.Design 6.0.5
